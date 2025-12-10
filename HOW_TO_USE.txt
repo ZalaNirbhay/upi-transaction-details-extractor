@@ -1,0 +1,46 @@
+================================================================
+          UPI PAYMENT INFORMATION EXTRACTOR - USER GUIDE
+================================================================
+
+Welcome! This tool helps you automatically read details from payment screenshots.
+
+----------------------------------------------------------------
+STEP 1: START THE APP
+----------------------------------------------------------------
+1. Open the folder containing this program.
+2. Double-click on the file named "launcher.bat" (or just "launcher").
+   - A black window will appear briefly to check for updates/requirements.
+   - The application window will open.
+
+----------------------------------------------------------------
+STEP 2: SELECT IMAGES
+----------------------------------------------------------------
+1. Click the "Select Images" button to choose specific screenshot files.
+   OR
+   Click "Select Folder" if you have a folder full of screenshots.
+
+2. You will see a confirmation message saying how many images are selected.
+
+----------------------------------------------------------------
+STEP 3: CHOOSE SAVE LOCATION (Optional)
+----------------------------------------------------------------
+1. By default, the results will be saved as "payment_details.xlsx" in this folder.
+2. If you want to save it somewhere else, click "Browse..." and choose a location.
+
+----------------------------------------------------------------
+STEP 4: START EXTRACTION
+----------------------------------------------------------------
+1. Click the green "START EXTRACTION" button.
+2. Wait for the progress bar to finish.
+3. Once done, a message will pop up, and the Excel file will open automatically.
+
+----------------------------------------------------------------
+TROUBLESHOOTING
+----------------------------------------------------------------
+- If the app doesn't open: Make sure you have Python installed.
+- If it says "Tesseract Not Found": You need to install Tesseract OCR.
+  Download here: https://github.com/UB-Mannheim/tesseract/wiki
+
+----------------------------------------------------------------
+Developed by Zala Nirbhay
+----------------------------------------------------------------

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Application Data
+*.xlsx
+*.log
+payment_details.xlsx
+ocr_errors.log
+
+# System
+Thumbs.db
+Desktop.ini
+
+# Agent
+.agent/

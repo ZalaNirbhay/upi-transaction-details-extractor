@@ -1,0 +1,6 @@
+ttkbootstrap
+pytesseract
+Pillow
+opencv-python
+pandas
+openpyxl
