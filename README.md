@@ -1,52 +1,65 @@
-# UPI Payment Information Extractor
+# UPI Payment Extractor 💳
 
-A professional tool to automatically extract transaction details from UPI payment screenshots (Google Pay, PhonePe, Paytm, etc.).
+> **Developed by Zala Nirbhay**
 
-## 🚀 How to Run This Project
+A professional desktop application to extract payment details from **UPI Screenshots** and **Bank Passbook Photos** using OCR. Automatically parses text and exports structured data to Excel.
 
-### Option 1: The Easy Way (One-Click)
-1.  **Unzip** the folder.
-2.  Double-click **`launcher.bat`**.
-    - This will automatically install the required libraries and start the app.
+## 🚀 Features
 
-### Option 2: Manual Run (Terminal)
-1.  Open Terminal in the folder.
-2.  Run: `pip install -r requirements.txt`
-3.  Run: `python main.py`
-
-
-### Option 2: If you are using Git
-1.  **Clone the repository**:
-    ```bash
-    git clone <repository-url>
-    ```
-2.  **Navigate to the folder**:
-    ```bash
-    cd <folder-name>
-    ```
-3.  **Install Requirements**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Run the App**:
-    ```bash
-    python main.py
-    ```
-
----
+- **Multi-Source Support**: Handles UPI payment screenshots and Bank Passbook photos.
+- **Batch Processing**: Select individual images or entire folders.
+- **Smart Parsing**: Automatically extracts key fields (Amount, Date, Sender, Receiver, Account No, IFSC, etc.).
+- **Excel Export**:
+  - Professional formatting (colors, bold headers).
+  - Financial summaries (Total Credit/Debit).
+  - **Append Mode**: Add new data to an existing Excel file without overwriting.
+- **Review & Edit**: Interactive table to verify and edit data before exporting.
+- **Dark/Light Mode**: Toggle effectively between themes.
 
 ## 🛠️ Prerequisites
-- **Python**: You need Python installed on your computer.
-- **Tesseract OCR**: This app uses Tesseract to read text from images.
-    - **Download**: [https://github.com/UB-Mannheim/tesseract/wiki](https://github.com/UB-Mannheim/tesseract/wiki)
-    - **Install**: Run the installer. The app will automatically find it.
 
-## 📖 How to Use
-1.  **Select Input**: Click "Select Images" or "Select Folder" to choose your screenshots.
-2.  **Select Output**: Choose where you want to save the Excel file.
-3.  **Start**: Click "START EXTRACTION".
-4.  **Done**: The Excel file will open automatically when finished.
+1.  **Python 3.10+**: [Download Here](https://www.python.org/downloads/)
+2.  **Tesseract OCR**:
+    - Download and install Tesseract: [Windows Installer (UB-Mannheim)](https://github.com/UB-Mannheim/tesseract/wiki)
+    - **IMPORTANT**: The app automatically looks for Tesseract in `C:\Program Files\Tesseract-OCR\tesseract.exe` or `C:\Program Files (x86)\Tesseract-OCR\tesseract.exe`.
+    - If installed elsewhere, add it to your System PATH or update the code.
 
-## ❓ Troubleshooting
-- **"Tesseract Not Found"**: Install Tesseract from the link above.
-- **"No Text Found"**: Ensure your images are clear and not blurry.
+## 📦 Installation
+
+1.  **Clone or Download** the repository.
+2.  **Run the Installer/Launcher** (Windows):
+    - Double-click `launcher.bat`.
+    - This script will automatically:
+        - Check for Python.
+        - Install required dependencies (`customtkinter`, `pandas`, `pytesseract`, etc.).
+        - Launch the application.
+
+## 🖥️ Usage
+
+1.  **Launch** the app via `launcher.bat`.
+2.  **Select Source**: Choose "Screenshot" or "Passbook" (or leave as "Auto").
+3.  **Load Images**: Click **Select Files** or **Select Folder**.
+4.  **Extract**: Click **START EXTRACTION**.
+5.  **Review**:
+    - Extracted data appears in the table.
+    - Click any row to see the image preview.
+    - Edit any cell if OCR made a mistake.
+6.  **Export**:
+    - Click **EXPORT**.
+    - Check **Append** if you want to add to an existing Excel sheet.
+    - Choose a file name and save.
+
+## 📂 Project Structure
+
+- `main.py`: Entry point.
+- `launcher.bat`: One-click installer & runner.
+- `upi_extractor/`: Core source code.
+    - `core/`: OCR logic and regex parsing.
+    - `ui/`: CustomTkinter GUI.
+    - `export/`: Excel generation logic.
+- `requirements.txt`: Python dependencies.
+
+## 👨‍💻 Developer
+
+**Zala Nirbhay**
+[LinkedIn Profile](https://www.linkedin.com/in/zala-nirbhay-528a532b0)

@@ -1,6 +1,6 @@
-ttkbootstrap
-pytesseract
+customtkinter
 Pillow
-opencv-python
+pytesseract
 pandas
 openpyxl
+packaging
